@@ -1,9 +1,9 @@
 ---
 title: "Lakefront Window: a one-page TabPFN card for when Chicago's beach is colder than your weather app"
-published: false
+published: true
 tags: devchallenge, hf26challenge, tabpfn, python
 ai_disclosure_level: fully_autonomous
-cover_image: ""
+cover_image: https://brooksmoore.github.io/lakefront-window/card.png
 ---
 
 <!-- TODO cover_image: upload out/card.png in the DEV editor, or use the raw GitHub URL once the repo is public -->
