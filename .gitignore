@@ -4,3 +4,4 @@ data/
 models/
 out/holdout_predictions.csv
 *.lock
+out/demo_slides/list.txt
