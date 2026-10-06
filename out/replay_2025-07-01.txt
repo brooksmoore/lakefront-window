@@ -1,0 +1,21 @@
+LAKEFRONT WINDOW, Tue Jul 1, 2025 (Oak Street Beach) - Replay of a holdout day
+Best 2 hours: 7am-9am
+sunrise 5:18 AM / sunset 8:29 PM
+
+ 7am   75F   8mph  rain   0%  P(good)  96%  app-ok=Y  actual=good
+ 8am   77F   9mph  rain   0%  P(good)  97%  app-ok=Y  actual=good
+ 9am   80F  10mph  rain   0%  P(good)  94%  app-ok=Y  actual=good
+10am   81F  12mph  rain   0%  P(good)  91%  app-ok=N  actual=good
+11am   82F   7mph  rain   0%  P(good)  82%  app-ok=N  actual=good
+12pm   84F   9mph  rain   0%  P(good)  84%  app-ok=N  actual=good
+ 1pm   85F   9mph  rain   0%  P(good)  89%  app-ok=N  actual=good
+ 2pm   85F   9mph  rain   0%  P(good)  72%  app-ok=N  actual=good
+ 3pm   87F   9mph  rain   0%  P(good)  82%  app-ok=N  actual=good
+ 4pm   88F   7mph  rain   0%  P(good)  82%  app-ok=N  actual=good
+ 5pm   85F  13mph  rain   0%  P(good)  91%  app-ok=N  actual=good
+ 6pm   84F   7mph  rain   0%  P(good)  89%  app-ok=N  actual=good
+ 7pm   84F   8mph  rain   0%  P(good)  90%  app-ok=N  actual=good
+
+* = not full daylight
+Inputs: actual Midway airport observations (a perfect 'forecast'); model trained on 2015-2023 only.
+Not a safety tool. Built with PriorLabs-TabPFN.

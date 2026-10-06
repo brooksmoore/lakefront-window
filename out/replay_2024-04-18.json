@@ -1,0 +1,155 @@
+{
+ "date": "Thu Apr 18, 2024",
+ "verdict": "No great window. Least-bad: 7am-9am",
+ "window_start_hour": 7,
+ "window_mean_p_good": 0.25,
+ "sunrise": "6:05 AM",
+ "sunset": "7:34 PM",
+ "title_note": "Replay of a holdout day",
+ "source_note": "Inputs: actual Midway airport observations (a perfect 'forecast'); model trained on 2015-2023 only.",
+ "hours": [
+  {
+   "hour": 7,
+   "temp_f": 50,
+   "wind_mph": 5,
+   "pop_pct": 0,
+   "p_good": 0.347,
+   "naive_ok": true,
+   "sky": "",
+   "daylight": true,
+   "actual_good": 1
+  },
+  {
+   "hour": 8,
+   "temp_f": 55,
+   "wind_mph": 5,
+   "pop_pct": 0,
+   "p_good": 0.143,
+   "naive_ok": true,
+   "sky": "",
+   "daylight": true,
+   "actual_good": 1
+  },
+  {
+   "hour": 9,
+   "temp_f": 56,
+   "wind_mph": 6,
+   "pop_pct": 0,
+   "p_good": 0.18,
+   "naive_ok": true,
+   "sky": "",
+   "daylight": true,
+   "actual_good": 1
+  },
+  {
+   "hour": 10,
+   "temp_f": 56,
+   "wind_mph": 5,
+   "pop_pct": 0,
+   "p_good": 0.089,
+   "naive_ok": true,
+   "sky": "",
+   "daylight": true,
+   "actual_good": 1
+  },
+  {
+   "hour": 11,
+   "temp_f": 56,
+   "wind_mph": 10,
+   "pop_pct": 0,
+   "p_good": 0.146,
+   "naive_ok": true,
+   "sky": "",
+   "daylight": true,
+   "actual_good": 1
+  },
+  {
+   "hour": 12,
+   "temp_f": 57,
+   "wind_mph": 9,
+   "pop_pct": 0,
+   "p_good": 0.091,
+   "naive_ok": true,
+   "sky": "",
+   "daylight": true,
+   "actual_good": 1
+  },
+  {
+   "hour": 13,
+   "temp_f": 57,
+   "wind_mph": 9,
+   "pop_pct": 0,
+   "p_good": 0.163,
+   "naive_ok": true,
+   "sky": "",
+   "daylight": true,
+   "actual_good": 0
+  },
+  {
+   "hour": 14,
+   "temp_f": 59,
+   "wind_mph": 15,
+   "pop_pct": 100,
+   "p_good": 0.106,
+   "naive_ok": false,
+   "sky": "",
+   "daylight": true,
+   "actual_good": 1
+  },
+  {
+   "hour": 15,
+   "temp_f": 59,
+   "wind_mph": 10,
+   "pop_pct": 0,
+   "p_good": 0.127,
+   "naive_ok": true,
+   "sky": "",
+   "daylight": true,
+   "actual_good": 1
+  },
+  {
+   "hour": 16,
+   "temp_f": 59,
+   "wind_mph": 9,
+   "pop_pct": 0,
+   "p_good": 0.092,
+   "naive_ok": true,
+   "sky": "",
+   "daylight": true,
+   "actual_good": 1
+  },
+  {
+   "hour": 17,
+   "temp_f": 58,
+   "wind_mph": 5,
+   "pop_pct": 0,
+   "p_good": 0.095,
+   "naive_ok": true,
+   "sky": "",
+   "daylight": true,
+   "actual_good": 1
+  },
+  {
+   "hour": 18,
+   "temp_f": 56,
+   "wind_mph": 10,
+   "pop_pct": 0,
+   "p_good": 0.048,
+   "naive_ok": true,
+   "sky": "",
+   "daylight": true,
+   "actual_good": 1
+  },
+  {
+   "hour": 19,
+   "temp_f": 53,
+   "wind_mph": 14,
+   "pop_pct": 100,
+   "p_good": 0.032,
+   "naive_ok": false,
+   "sky": "",
+   "daylight": false,
+   "actual_good": 0
+  }
+ ]
+}

@@ -1,0 +1,142 @@
+{
+ "date": "Tue Oct 6, 2026",
+ "verdict": "Best 2 hours: 8am-10am",
+ "window_start_hour": 8,
+ "window_mean_p_good": 0.99,
+ "sunrise": "6:51 AM",
+ "sunset": "6:25 PM",
+ "title_note": "Forecast card",
+ "source_note": "NWS hourly forecast issued Mon Oct 5 9:48 PM CT (gridpoint LOT/72,69, Midway area).",
+ "hours": [
+  {
+   "hour": 7,
+   "temp_f": 50,
+   "wind_mph": 5,
+   "pop_pct": 0,
+   "p_good": 0.966,
+   "naive_ok": true,
+   "sky": "Sunny",
+   "daylight": true
+  },
+  {
+   "hour": 8,
+   "temp_f": 52,
+   "wind_mph": 5,
+   "pop_pct": 0,
+   "p_good": 0.985,
+   "naive_ok": true,
+   "sky": "Sunny",
+   "daylight": true
+  },
+  {
+   "hour": 9,
+   "temp_f": 57,
+   "wind_mph": 10,
+   "pop_pct": 0,
+   "p_good": 0.994,
+   "naive_ok": true,
+   "sky": "Sunny",
+   "daylight": true
+  },
+  {
+   "hour": 10,
+   "temp_f": 61,
+   "wind_mph": 10,
+   "pop_pct": 0,
+   "p_good": 0.993,
+   "naive_ok": true,
+   "sky": "Sunny",
+   "daylight": true
+  },
+  {
+   "hour": 11,
+   "temp_f": 65,
+   "wind_mph": 10,
+   "pop_pct": 0,
+   "p_good": 0.994,
+   "naive_ok": true,
+   "sky": "Sunny",
+   "daylight": true
+  },
+  {
+   "hour": 12,
+   "temp_f": 68,
+   "wind_mph": 15,
+   "pop_pct": 0,
+   "p_good": 0.983,
+   "naive_ok": true,
+   "sky": "Sunny",
+   "daylight": true
+  },
+  {
+   "hour": 13,
+   "temp_f": 70,
+   "wind_mph": 15,
+   "pop_pct": 0,
+   "p_good": 0.977,
+   "naive_ok": true,
+   "sky": "Sunny",
+   "daylight": true
+  },
+  {
+   "hour": 14,
+   "temp_f": 72,
+   "wind_mph": 15,
+   "pop_pct": 0,
+   "p_good": 0.972,
+   "naive_ok": true,
+   "sky": "Sunny",
+   "daylight": true
+  },
+  {
+   "hour": 15,
+   "temp_f": 72,
+   "wind_mph": 15,
+   "pop_pct": 0,
+   "p_good": 0.974,
+   "naive_ok": true,
+   "sky": "Sunny",
+   "daylight": true
+  },
+  {
+   "hour": 16,
+   "temp_f": 72,
+   "wind_mph": 15,
+   "pop_pct": 0,
+   "p_good": 0.971,
+   "naive_ok": true,
+   "sky": "Sunny",
+   "daylight": true
+  },
+  {
+   "hour": 17,
+   "temp_f": 70,
+   "wind_mph": 10,
+   "pop_pct": 0,
+   "p_good": 0.989,
+   "naive_ok": true,
+   "sky": "Sunny",
+   "daylight": true
+  },
+  {
+   "hour": 18,
+   "temp_f": 67,
+   "wind_mph": 10,
+   "pop_pct": 0,
+   "p_good": 0.99,
+   "naive_ok": true,
+   "sky": "Mostly Clear",
+   "daylight": false
+  },
+  {
+   "hour": 19,
+   "temp_f": 65,
+   "wind_mph": 10,
+   "pop_pct": 0,
+   "p_good": 0.99,
+   "naive_ok": true,
+   "sky": "Mostly Clear",
+   "daylight": false
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+LAKEFRONT WINDOW, Sat May 3, 2025 (Oak Street Beach) - Replay of a holdout day
+No great window. Least-bad: 2pm-4pm
+sunrise 5:45 AM / sunset 7:49 PM
+
+ 7am   46F  12mph  rain   0%  P(good)   0%  app-ok=N  actual=not good
+ 8am   48F  16mph  rain   0%  P(good)   0%  app-ok=N  actual=not good
+ 9am   50F  14mph  rain   0%  P(good)   1%  app-ok=Y  actual=not good
+10am   52F  16mph  rain   0%  P(good)   2%  app-ok=Y  actual=not good
+11am   53F  13mph  rain   0%  P(good)   4%  app-ok=Y  actual=not good
+12pm   53F  15mph  rain   0%  P(good)   4%  app-ok=Y  actual=not good
+ 1pm   53F  20mph  rain   0%  P(good)   4%  app-ok=Y  actual=not good
+ 2pm   53F  17mph  rain   0%  P(good)   4%  app-ok=Y  actual=not good
+ 3pm   54F  15mph  rain   0%  P(good)  13%  app-ok=Y  actual=not good
+ 4pm   53F  16mph  rain   0%  P(good)   3%  app-ok=Y  actual=not good
+ 5pm   53F  20mph  rain   0%  P(good)   5%  app-ok=Y  actual=not good
+ 6pm   53F  15mph  rain   0%  P(good)   4%  app-ok=Y  actual=not good
+ 7pm*   51F  15mph  rain   0%  P(good)   2%  app-ok=Y  actual=not good
+
+* = not full daylight
+Inputs: actual Midway airport observations (a perfect 'forecast'); model trained on 2015-2023 only.
+Not a safety tool. Built with PriorLabs-TabPFN.

@@ -1,0 +1,182 @@
+{
+ "label": {
+  "definition": "Oak Street lakefront sensor hour with air temp 10-27 C, hourly max gust < 9 m/s, and no rain/snow detected; hours 07:00-19:00 local only",
+  "base_rate_train": 0.47987205226800966,
+  "base_rate_test": 0.473545669913135
+ },
+ "split": {
+  "train": [
+   "2015-05-26 14:00:00",
+   "2023-12-31 19:00:00",
+   29387
+  ],
+  "test": [
+   "2024-01-01 07:00:00",
+   "2026-10-05 19:00:00",
+   11397
+  ]
+ },
+ "tabpfn_context_rows": 3000,
+ "tabpfn_cpu_seconds": 53.9,
+ "holdout": {
+  "naive_forecast_as_is": {
+   "accuracy": 0.846012108449592,
+   "balanced_accuracy": 0.8424281545302946,
+   "f1_good": 0.8265296036374419,
+   "brier": 0.153987891550408,
+   "auc": null,
+   "window_days": 629,
+   "window_hit_rate": 0.5103338632750397,
+   "window_oracle_any_good_window": 0.5993640699523053,
+   "window_random_window": 0.4152093269740332,
+   "window_hit_rate_on_days_with_a_good_window": 0.8514588859416445
+  },
+  "naive_plus_lake_temp_offset": {
+   "accuracy": 0.8634728437308063,
+   "balanced_accuracy": 0.8609201871410043,
+   "f1_good": 0.8493415956622773,
+   "brier": 0.13652715626919365,
+   "auc": null,
+   "window_days": 629,
+   "window_hit_rate": 0.519872813990461,
+   "window_oracle_any_good_window": 0.5993640699523053,
+   "window_random_window": 0.4152093269740332,
+   "window_hit_rate_on_days_with_a_good_window": 0.8673740053050398
+  },
+  "climatology_month_hour": {
+   "accuracy": 0.7597613407036939,
+   "balanced_accuracy": 0.7601483694645174,
+   "f1_good": 0.7515877336236617,
+   "brier": 0.17067730324642366,
+   "auc": 0.825296105861281,
+   "window_days": 629,
+   "window_hit_rate": 0.465818759936407,
+   "window_oracle_any_good_window": 0.5993640699523053,
+   "window_random_window": 0.4152093269740332,
+   "window_hit_rate_on_days_with_a_good_window": 0.7771883289124668
+  },
+  "logistic_regression_all_train": {
+   "accuracy": 0.7834517855576029,
+   "balanced_accuracy": 0.7812052065962571,
+   "f1_good": 0.7636468109557556,
+   "brier": 0.15589088048460037,
+   "auc": 0.8517496448644308,
+   "window_days": 629,
+   "window_hit_rate": 0.4626391096979332,
+   "window_oracle_any_good_window": 0.5993640699523053,
+   "window_random_window": 0.4152093269740332,
+   "window_hit_rate_on_days_with_a_good_window": 0.7718832891246684
+  },
+  "gradient_boosting_all_train": {
+   "accuracy": 0.9161182767394929,
+   "balanced_accuracy": 0.915398647396702,
+   "f1_good": 0.9105706267539757,
+   "brier": 0.061943697934565986,
+   "auc": 0.9751580507689457,
+   "window_days": 629,
+   "window_hit_rate": 0.5468998410174881,
+   "window_oracle_any_good_window": 0.5993640699523053,
+   "window_random_window": 0.4152093269740332,
+   "window_hit_rate_on_days_with_a_good_window": 0.9124668435013262
+  },
+  "tabpfn_v2_3000_rows": {
+   "accuracy": 0.9138369746424497,
+   "balanced_accuracy": 0.9127012692236428,
+   "f1_good": 0.9073759667987172,
+   "brier": 0.06684760004281998,
+   "auc": 0.9729783212896053,
+   "window_days": 629,
+   "window_hit_rate": 0.5564387917329093,
+   "window_oracle_any_good_window": 0.5993640699523053,
+   "window_random_window": 0.4152093269740332,
+   "window_hit_rate_on_days_with_a_good_window": 0.9283819628647215
+  }
+ },
+ "stress_test_noisy_inputs": {
+  "naive_forecast_as_is": {
+   "accuracy": 0.8174080898482057,
+   "balanced_accuracy": 0.8127382805262182,
+   "f1_good": 0.7898192101807898,
+   "brier": 0.18259191015179432,
+   "auc": null
+  },
+  "naive_plus_lake_temp_offset": {
+   "accuracy": 0.834430113187681,
+   "balanced_accuracy": 0.8313164257921067,
+   "f1_good": 0.8154523227383863,
+   "brier": 0.16556988681231904,
+   "auc": null
+  },
+  "gradient_boosting_all_train": {
+   "accuracy": 0.8878652276914978,
+   "balanced_accuracy": 0.8867869649805448,
+   "f1_good": 0.8797742238946378,
+   "brier": 0.0837080271940647,
+   "auc": 0.9571616484466678
+  },
+  "tabpfn_v2_3000_rows": {
+   "accuracy": 0.8848819864876722,
+   "balanced_accuracy": 0.8837022419862888,
+   "f1_good": 0.8763430725730443,
+   "brier": 0.08531389385461807,
+   "auc": 0.9549286023099252
+  }
+ },
+ "lake_minus_midway_temp_by_month_c": {
+  "1": 0.63,
+  "2": 0.2,
+  "3": -1.04,
+  "4": -1.78,
+  "5": -3.04,
+  "6": -2.83,
+  "7": -1.84,
+  "8": -1.1,
+  "9": -0.71,
+  "10": 0.02,
+  "11": 0.72,
+  "12": 0.62
+ },
+ "days_tabpfn_vs_naive": {
+  "tabpfn_fewer_wrong_hours": 274,
+  "naive_fewer_wrong_hours": 89,
+  "tie": 563
+ },
+ "tabpfn_calibration": [
+  {
+   "bin": "(-0.001, 0.1]",
+   "n": 4192,
+   "mean_pred": 0.011,
+   "observed": 0.007
+  },
+  {
+   "bin": "(0.1, 0.3]",
+   "n": 1079,
+   "mean_pred": 0.201,
+   "observed": 0.191
+  },
+  {
+   "bin": "(0.3, 0.5]",
+   "n": 921,
+   "mean_pred": 0.387,
+   "observed": 0.383
+  },
+  {
+   "bin": "(0.5, 0.7]",
+   "n": 651,
+   "mean_pred": 0.604,
+   "observed": 0.708
+  },
+  {
+   "bin": "(0.7, 0.9]",
+   "n": 2733,
+   "mean_pred": 0.83,
+   "observed": 0.932
+  },
+  {
+   "bin": "(0.9, 1.0]",
+   "n": 1821,
+   "mean_pred": 0.921,
+   "observed": 0.989
+  }
+ ]
+}
