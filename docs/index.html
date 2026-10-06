@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lakefront Window — Chicago beach card</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 720px; margin: 2rem auto; padding: 0 1rem; line-height: 1.5; color: #1a1a1a; }
+    h1 { font-size: 1.4rem; }
+    img { max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px; }
+    a.button { display: inline-block; margin: 0.5rem 0.5rem 0.5rem 0; padding: 0.6rem 1rem; background: #3b49df; color: #fff; text-decoration: none; border-radius: 8px; font-weight: 600; }
+    .muted { color: #666; font-size: 0.95rem; }
+    code { background: #f4f4f4; padding: 0.1rem 0.35rem; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <h1>Lakefront Window</h1>
+  <p>Best daylight hours on Chicago’s lakefront, printed as a one-page card. Built offline with TabPFN-v2.</p>
+  <p>
+    <a class="button" href="card.pdf">Open today’s card (PDF)</a>
+    <a class="button" href="https://github.com/brooksmoore/lakefront-window" style="background:#24292f">Code on GitHub</a>
+  </p>
+  <p class="muted">Sample card for Tue Oct 6, 2026 (from the NWS Midway forecast fetched the night before):</p>
+  <img src="card.png" alt="Lakefront Window card for Oct 6, 2026" />
+  <h2>Holdout replays</h2>
+  <p class="muted">May 3, 2025 — classic cooler-by-the-lake day (model said no window; beach stayed cold):</p>
+  <img src="replay_2025-05-03.png" alt="Replay May 3 2025" />
+  <p class="muted">Apr 18, 2024 — a miss (model said not good; beach turned out fine):</p>
+  <img src="replay_2024-04-18.png" alt="Replay Apr 18 2024" />
+  <p class="muted">Repo: <code>brooksmoore/lakefront-window</code> · MIT · Built by Alfred (AI), reviewed by Claude and Brooks Moore.</p>
+</body>
+</html>

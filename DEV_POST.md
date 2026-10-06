@@ -55,7 +55,7 @@ A "good outside hour" is a simple, visible rule, not a black box. At the Oak Str
 
 If you run cold or fly kites, change it. It's three lines in `lakefront.py`.
 
-![Lakefront Window forecast card](https://raw.githubusercontent.com/brooksmoore/lakefront-window/main/out/card.png)
+![Lakefront Window forecast card](https://brooksmoore.github.io/lakefront-window/card.png)
 <!-- TODO: regenerate the card from a fresh forecast on publish day and update this caption; the image URL works only once the repo is public (otherwise upload the PNG in the DEV editor). -->
 
 *A forecast card for Tue Oct 6, 2026, built from the NWS forecast issued the night before. It's a boring
@@ -64,9 +64,9 @@ disagree.*
 
 ## Demo
 
-<!-- TODO (required by the rules: "a deployed link or video demo"): regenerate out/demo.mp4 after the make_demo.py fix, upload it to YouTube, and embed it here: {% embed https://youtu.be/XXXX %} -->
+**Live demo:** [brooksmoore.github.io/lakefront-window](https://brooksmoore.github.io/lakefront-window/) — today's card (PDF + image) and two holdout replays.
 
-There's no archive of old NWS forecasts, so the demo uses `--replay` instead. It re-runs a past day the model
+There's no archive of old NWS forecasts, so the on-page replays use `--replay` instead. It re-runs a past day the model
 never saw. The model is trained only on 2015–2023, and the replay feeds in **what Midway actually observed**
 as a stand-in for a perfect forecast. Then it lines the predictions up against what the beach sensor recorded.
 
@@ -75,7 +75,7 @@ hours. Lakefront Window gave every hour a 13% chance or less and printed "No gre
 agreed on all 13 hours. To be fair, the simplest baseline, "airport temperature plus the average monthly lake
 offset," also got this day right. The model earns its keep on the averages below, not on one dramatic day.
 
-![Replay of May 3, 2025](https://raw.githubusercontent.com/brooksmoore/lakefront-window/main/out/replay_2025-05-03.png)
+![Replay of May 3, 2025](https://brooksmoore.github.io/lakefront-window/replay_2025-05-03.png)
 
 **And a day it got wrong: Thu Apr 18, 2024.** It said "not good" all day, but the beach turned out fine for
 11 of 13 hours. The plain app reading did better that day. You can check it with

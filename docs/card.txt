@@ -1,0 +1,21 @@
+LAKEFRONT WINDOW, Tue Oct 6, 2026 (Oak Street Beach) - Forecast card
+Best 2 hours: 8am-10am
+sunrise 6:51 AM / sunset 6:25 PM
+
+ 7am   50F   5mph  rain   0%  P(good)  97%  app-ok=Y  Sunny
+ 8am   52F   5mph  rain   0%  P(good)  98%  app-ok=Y  Sunny
+ 9am   57F  10mph  rain   0%  P(good)  99%  app-ok=Y  Sunny
+10am   61F  10mph  rain   0%  P(good)  99%  app-ok=Y  Sunny
+11am   65F  10mph  rain   0%  P(good)  99%  app-ok=Y  Sunny
+12pm   68F  15mph  rain   0%  P(good)  98%  app-ok=Y  Sunny
+ 1pm   70F  15mph  rain   0%  P(good)  98%  app-ok=Y  Sunny
+ 2pm   72F  15mph  rain   0%  P(good)  97%  app-ok=Y  Sunny
+ 3pm   72F  15mph  rain   0%  P(good)  97%  app-ok=Y  Sunny
+ 4pm   72F  15mph  rain   0%  P(good)  97%  app-ok=Y  Sunny
+ 5pm   70F  10mph  rain   0%  P(good)  99%  app-ok=Y  Sunny
+ 6pm*   67F  10mph  rain   0%  P(good)  99%  app-ok=Y  Mostly Clear
+ 7pm*   65F  10mph  rain   0%  P(good)  99%  app-ok=Y  Mostly Clear
+
+* = not full daylight
+NWS hourly forecast issued Mon Oct 5 9:48 PM CT (gridpoint LOT/72,69, Midway area).
+Not a safety tool. Built with PriorLabs-TabPFN.
