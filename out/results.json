@@ -178,5 +178,13 @@
    "mean_pred": 0.921,
    "observed": 0.989
   }
- ]
+ ],
+ "midway_warm_lakefront_cold_hours": {
+  "definition": "Joined 7am\u20137pm hours where both Oak Street and Midway reported; Midway temp \u2265 60\u00b0F and lakefront temp < 50\u00b0F.",
+  "years": "2015-05-26 to 2026-10-05",
+  "days": 77,
+  "hours": 197,
+  "first_day": "2015-06-01",
+  "last_day": "2026-04-22"
+ }
 }

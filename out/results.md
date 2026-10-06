@@ -40,3 +40,9 @@ Per test day, TabPFN had fewer wrong hours than the as-is app reading on 274 day
 | tabpfn_v2_3000_rows | 0.885 | 0.085 |
 
 TabPFN-v2 context: 3000 randomly sampled training hours; CPU time to score the holdout: 53.9 s.
+
+## Lake vs airport contrast (joined 7am–7pm hours)
+
+Definition: Midway ≥ 60°F and Oak Street beach < 50°F on the same hour.
+**77 days** (197 hours) between 2015-06-01 and 2026-04-22.
+May / June mean (lakefront − Midway), training years in results.json offsets: -3.04 / -2.83 °C.

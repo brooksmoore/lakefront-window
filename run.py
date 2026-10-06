@@ -54,6 +54,23 @@ def proba(clf, X: pd.DataFrame) -> np.ndarray:
     return clf.predict_proba(X[L.FEATURES].to_numpy())[:, 1]
 
 
+
+def midway_warm_lakefront_cold_hours(df: pd.DataFrame) -> dict:
+    """Joined 7am-7pm hours: Midway >= 60 F and lakefront < 50 F."""
+    mdw_f = df["temp_c"] * 9 / 5 + 32
+    lake_f = df["lake_temp_c"] * 9 / 5 + 32
+    hit = df[(mdw_f >= 60) & (lake_f < 50)]
+    days = int(pd.Series(hit.index.date).nunique()) if len(hit) else 0
+    return {
+        "definition": ("Joined 7am–7pm hours where both Oak Street and Midway reported; "
+                       "Midway temp ≥ 60°F and lakefront temp < 50°F."),
+        "years": f"{df.index.min().date()} to {df.index.max().date()}",
+        "days": days,
+        "hours": int(len(hit)),
+        "first_day": str(hit.index.min().date()) if len(hit) else None,
+        "last_day": str(hit.index.max().date()) if len(hit) else None,
+    }
+
 def monthly_temp_offset(train: pd.DataFrame) -> pd.Series:
     """Mean (lakefront - Midway) temperature by month, learned on training years only."""
     return (train.lake_temp_c - train.temp_c).groupby(train.index.month).mean()
@@ -184,6 +201,7 @@ def evaluate(df: pd.DataFrame, context: int) -> dict:
         "holdout": res,
         "stress_test_noisy_inputs": stress,
         "lake_minus_midway_temp_by_month_c": {int(k): round(float(v), 2) for k, v in off.items()},
+        "midway_warm_lakefront_cold_hours": midway_warm_lakefront_cold_hours(df),
         "days_tabpfn_vs_naive": day_tally,
         "tabpfn_calibration": [{"bin": str(i), "n": int(r.n), "mean_pred": round(float(r.mean_pred), 3),
                                 "observed": round(float(r.observed), 3)} for i, r in calib.iterrows()],
@@ -409,7 +427,15 @@ def results_md(r: dict) -> str:
         out.append(f"| {k} | {m['accuracy']:.3f} | {m['brier']:.3f} |")
     out += ["", f"TabPFN-v2 context: {r['tabpfn_context_rows']} randomly sampled training hours; "
             f"CPU time to score the holdout: {r['tabpfn_cpu_seconds']} s.", ""]
+    contrast = r.get("midway_warm_lakefront_cold_hours")
+    if contrast:
+        out += ["", "## Lake vs airport contrast (joined 7am–7pm hours)", "",
+                f"Definition: {contrast['definition']}",
+                (f"**{contrast['days']} days** ({contrast['hours']} hours) between "
+                 f"{contrast.get('first_day')} and {contrast.get('last_day')}."),
+                ]
     return "\n".join(out)
+
 
 
 def main() -> None:

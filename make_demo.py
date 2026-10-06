@@ -32,7 +32,8 @@ def text_slide(path: Path, title: str, body: str, mono: bool = False) -> None:
     plt.close(fig)
 
 
-def offset_slide(path: Path, offsets: dict) -> None:
+def offset_slide(path: Path, offsets: dict, res: dict | None = None) -> None:
+    res = res or {}
     fig = plt.figure(figsize=(W, H))
     fig.text(0.07, 0.92, "Why: 'cooler by the lake'", fontsize=24, weight="bold", va="top")
     fig.text(0.07, 0.86, "Oak Street lakefront sensor minus Midway airport temperature,\n"
@@ -44,9 +45,17 @@ def offset_slide(path: Path, offsets: dict) -> None:
     ax.axhline(0, color="black", lw=0.8)
     ax.set_xticks(months, "Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split())
     ax.set_ylabel("°C (lakefront − airport)")
-    fig.text(0.07, 0.2, textwrap.fill("In May and June the lakefront averages ~3 °C colder than the airport, "
-             "and onshore winds make individual days far colder: in 2015-2026 there were 77 days with hours where "
-             "Midway read 60 °F or warmer while the lakefront sensor read under 50 °F.", 70), fontsize=12, va="top")
+    contrast = res.get("midway_warm_lakefront_cold_hours", {})
+    n_days = contrast.get("days", "?")
+    may = offsets.get("5", offsets.get(5))
+    jun = offsets.get("6", offsets.get(6))
+    fig.text(0.07, 0.2, textwrap.fill(
+        f"In May and June (2015–2023 training years, 7am–7pm) the lakefront averaged "
+        f"{abs(may):.1f} °C and {abs(jun):.1f} °C colder than Midway. Onshore wind widens the gap: "
+        f"across the joined record there were {n_days} days with hours where Midway read 60 °F or warmer "
+        f"while the lakefront sensor read under 50 °F "
+        f"(see midway_warm_lakefront_cold_hours in results.json).", 70),
+        fontsize=12, va="top")
     fig.savefig(path, dpi=110)
     plt.close(fig)
 
@@ -66,7 +75,7 @@ def main() -> None:
     slides.append(p)
 
     p = SLIDES / "02_why.png"
-    offset_slide(p, res["lake_minus_midway_temp_by_month_c"])
+    offset_slide(p, res["lake_minus_midway_temp_by_month_c"], res)
     slides.append(p)
 
     p = SLIDES / "03_results.png"
